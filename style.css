@@ -1,0 +1,107 @@
+@import url ('https://fonts.googleapis.com/css2? família=Inter:wght@800&family=Roboto&display=swap');
+
+body {
+ background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);
+ font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background: #ECF4FF;
+  color: #1C1C1C;  /*textos*/
+  margin: 64px;
+  border-radius:20px;
+  box-shadow: 6px 6px 6px #0E1D2F;
+  padding: 64px; /*elementos dentro*/
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between  /*centralizar e justificar, space between é para cada um ficar de um lado*/
+}
+
+.perfil {
+  display: flex;
+  /*caixa flexível - estiliza dinamicamente, horizontal, vertical, centralizado, etc*/
+}
+
+.perfil-foto {
+  border-radius: 460px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulos {
+  margin-left: 20px;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tema button {
+  align-self: flex-end;   /*o elemento sozinho*/ 
+  font-weight: 400;
+  font-size: 24px;
+  padding: 8px 16px;  /*o primeiro é distancia em cima e embaixo e o segundo são as laterais*/
+  background: #ECF4FF;
+  border: 4px solid #0E1D2F;
+  border-radius: 100px;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  margin-top: 32px;
+  padding: 32px; /* todos os quatro cantos */
+  }
+
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: roboto; 
+}
+
+.projetos-item {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: Roboto;
+  line-height: 48px; /* altura da linha, distanciamento entre linhas */
+}
+
+.projetos-item p {
+  color: #1C1C1C;
+  text-decoration: none;
+  font-family: Roboto
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+}
+
+.dark .container {
+  background: #333439;
+  color: #F6F6F6;
+}
+
+.dark .projetos {
+  color: #1C1C1C;
+}
+
+.dark .tema button {
+  background: #1C1C1C;
+  color: #FFFFFF;
+  border: 4px solid #F7F7F7;
+}
